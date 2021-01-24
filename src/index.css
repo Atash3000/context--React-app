@@ -12,3 +12,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.App{
+  
+  max-width: 360px;
+  height: auto;
+  margin:0 auto;
+  background-color: #DAE3E5;
+}
+
+.title-bar{
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  padding:11px 16px;
+  background-color:#507DBC;
+  align-items: center;
+
+}
+
+.nav-bar{
+  list-style-type: none;
+  
+  display:flex;
+  justify-content: space-around;
+  background-color: #A1C6EA;
+  padding:13px 0;
+}
+.nav-bar li{
+  font-weight: 600;
+  display:inline-block;
+} 
+
+.todolist{
+  
+  text-align: center;
+  width: 100%;
+  
+  padding:25px 17px;
+}
+.todolist input{
+  width: 100%;
+  border-radius: 3.5px;
+  height: 42px;
+  font-size: 16px;
+  padding:15px;
+  margin-bottom: 29px;
+}
+
+
+.todolist ul{
+  list-style-type: none;
+ 
+}
+
+.todolist ul li{
+  background-color: #BBD1EA;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-radius: 3.5px;
+  padding:15px;
+  font-size: 16px;
+ text-transform: capitalize;
+  
+}

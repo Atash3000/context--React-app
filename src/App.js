@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <TitleBar></TitleBar>
-       <Navbar></Navbar>
-       <TodoList></TodoList>
+      <Navbar></Navbar>
+      <TodoList></TodoList>
     </div>
   );
 }
