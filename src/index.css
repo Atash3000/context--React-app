@@ -9,9 +9,9 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
 }
+
 *{
   margin:0;
   padding:0;
@@ -19,7 +19,6 @@ code {
 }
 
 .App{
-  
   max-width: 360px;
   height: auto;
   margin:0 auto;
@@ -33,29 +32,27 @@ code {
   padding:11px 16px;
   background-color:#507DBC;
   align-items: center;
-
 }
 
 .nav-bar{
   list-style-type: none;
-  
   display:flex;
   justify-content: space-around;
   background-color: #A1C6EA;
   padding:13px 0;
 }
+
 .nav-bar li{
   font-weight: 600;
   display:inline-block;
 } 
 
 .todolist{
-  
   text-align: center;
   width: 100%;
-  
   padding:25px 17px;
 }
+
 .todolist input{
   width: 100%;
   border-radius: 3.5px;
@@ -63,12 +60,12 @@ code {
   font-size: 16px;
   padding:15px;
   margin-bottom: 29px;
+  background-color: rgba(255, 255, 255, 0.671);
 }
 
 
 .todolist ul{
   list-style-type: none;
- 
 }
 
 .todolist ul li{
@@ -79,6 +76,10 @@ code {
   border-radius: 3.5px;
   padding:15px;
   font-size: 16px;
- text-transform: capitalize;
+  text-transform: capitalize;
   
+}
+
+ul li{
+  cursor: pointer;
 }

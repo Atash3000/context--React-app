@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar.js'
 import TodoList from './components/TodoList.js'
-import TitleBar from './components/TitleBar.js'
+import TitleBar, { Person } from './components/TitleBar.js'
 
 function App() {
   return (

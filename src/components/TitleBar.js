@@ -12,3 +12,4 @@ render(){
 }
 
 export default TitleBar 
+
