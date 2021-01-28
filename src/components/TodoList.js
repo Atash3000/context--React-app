@@ -4,10 +4,11 @@ import {ListItemContext} from '../contexts/ListItemContex';
 import { FaExclamationTriangle } from "react-icons/fa";
 function TodoList(){
   const {tasks,addItem,removeItem} = useContext( ListItemContext);
-  const [errMessage ,setErrMessagege] =useState('enter a value')
+  const [errMessage ,setErrMessagege] =useState('Enter a value')
   const [task ,setTask] =useState()
  const { isLightTheme ,ligthTheme, darkTheme } = useContext(ThemeContext);
   const theme = isLightTheme ? ligthTheme : darkTheme
+
   const styles = {
     div:{
       backgroundColor:theme.todolist
@@ -20,7 +21,7 @@ function TodoList(){
   document.body.onload=()=>{
     document.querySelector('#task_input').focus()
   }
-const handleSubmit=(e)=>{
+  const handleSubmit=(e)=>{
 e.preventDefault();
 const regex = /^\s+$/;
 if(regex.test(task)<=0 && task){
@@ -35,17 +36,21 @@ if(regex.test(task)<=0 && task){
 }
 
 setTask('');
+
 }
+
+
 
   
   return(
     <form onSubmit={handleSubmit} style={styles.div} className="todolist">
       <input value={task} onChange={(e)=>setTask(e.target.value)} placeholder={errMessage} type="text" id='task_input' />
-      <div className="scroll">
+      <div className='scroll'>
       <ul>
-        {tasks.map(item=> {
+        {tasks.slice(0).reverse().map(item=> {
+          const {title,id} = item
           return(
-            <li  key={item.id} style={styles.li}  >{item.title}<i id={item.id} onClick={()=>removeItem(item.id)} className="far fa-trash-alt icon-trash"></i></li> 
+            <li  key={id} style={styles.li}  >{title}<i id={id} onClick={()=>removeItem(id)} className="far fa-trash-alt icon-trash"></i></li> 
           )
         } )}
         
@@ -53,9 +58,7 @@ setTask('');
       </div>
     </form>
   )
-
 }
 
 export default TodoList 
-
 

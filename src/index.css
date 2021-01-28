@@ -63,20 +63,26 @@ code {
   text-align: center;
   width: 100%;
   padding:25px 17px;
- 
+  
+  /* max-height: 340px; */
   /* background-color: #DAE3E5; */
  
 }
 .scroll{
   min-height:55vh;
+  /* min-height:55vh; */
   max-height: 340px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
+.scroll::-webkit-scrollbar{
+  display:none;
+}
+
 
 .todolist input{
- 
+  transition: all 0.2s;
   width: 100%;
   border-radius: 3.5px;
   height: 42px;
@@ -89,9 +95,10 @@ code {
 
 #task_input.red::placeholder{
   color:red;
-  
+  transition:color 0.2s;
 }
 #task_input.red{
+  transition:outline 0.2s;
   outline:2px solid red;
 }
 
@@ -111,13 +118,11 @@ code {
   text-transform: capitalize;
   white-space: normal;
   text-align: center;
- 
+
 }
 
 ul li{
-  
   cursor: pointer;
-
 }
 .icon-trash{
   transition: all 0.2s ;
@@ -129,7 +134,6 @@ ul li{
 .icon-trash:hover{
 color:#ff000083;
 font-size: 25px;
-
 }
 
 
