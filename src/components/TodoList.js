@@ -39,9 +39,6 @@ setTask('');
 
 }
 
-
-
-  
   return(
     <form onSubmit={handleSubmit} style={styles.div} className="todolist">
       <input value={task} onChange={(e)=>setTask(e.target.value)} placeholder={errMessage} type="text" id='task_input' />
