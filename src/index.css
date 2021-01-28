@@ -21,7 +21,7 @@ code {
 
 .App{
   max-width: 360px;
-  max-height: 350px;
+  /* max-height: 350px; */
   margin:0 auto; 
   
 }
@@ -59,15 +59,24 @@ code {
 } 
 
 .todolist{
+  
   text-align: center;
   width: 100%;
   padding:25px 17px;
+ 
   /* background-color: #DAE3E5; */
  
+}
+.scroll{
+  min-height:55vh;
+  max-height: 340px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 
 .todolist input{
+ 
   width: 100%;
   border-radius: 3.5px;
   height: 42px;
@@ -75,8 +84,16 @@ code {
   padding:15px;
   margin-bottom: 29px;
   background-color: #eee;
+  border:1px solid rgba(0, 0, 0, 0.267);
 }
 
+#task_input.red::placeholder{
+  color:red;
+  
+}
+#task_input.red{
+  outline:2px solid red;
+}
 
 .todolist ul{
   list-style-type: none;
@@ -94,10 +111,24 @@ code {
   text-transform: capitalize;
   white-space: normal;
   text-align: center;
+ 
 }
 
 ul li{
+  
   cursor: pointer;
+
+}
+.icon-trash{
+  transition: all 0.2s ;
+  color:#1171eea6;
+  font-size: 20px;
+}
+
+.icon-trash:active,
+.icon-trash:hover{
+color:#ff000083;
+font-size: 25px;
 
 }
 
