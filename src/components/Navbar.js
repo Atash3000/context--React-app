@@ -6,15 +6,14 @@ render(){
   const { isLightTheme ,ligthTheme, darkTheme, isLogedIn,userStatus} = this.context;
   const theme = isLightTheme ? ligthTheme : darkTheme
 
- const styles = {
+  const styles = {
     ul:{
       backgroundColor:theme.navBar,
       color:theme.textColor
     }
+    
   }
 
-
-  
   return(
     <ul style={styles.ul} className="nav-bar">
       <li>Home</li>

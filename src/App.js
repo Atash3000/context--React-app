@@ -6,7 +6,6 @@ import ThemeContextProvider from './contexts/ThemeContext';
 
 
 function  App(){
- 
     return (
       <div  className="App">
         <ThemeContextProvider>
@@ -22,3 +21,4 @@ function  App(){
 }
 
 export default App;
+

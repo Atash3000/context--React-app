@@ -15,26 +15,32 @@ code {
 *{
   margin:0;
   padding:0;
-  box-sizing: border-box;
+  box-sizing:border-box;
+  
 }
 
 .App{
   max-width: 360px;
-  height: auto;
-  margin:0 auto;
- 
+  max-height: 350px;
+  margin:0 auto; 
+  
 }
+
 
 .title-bar{
   display:flex;
   justify-content: space-between;
   padding:11px 16px;
   /* background-color:#507DBC; */
-  align-items: center;
 }
 
 #switch_icon{
   font-size: 24px;
+  cursor: pointer;
+}
+
+*{
+  transition : background-color 0.9s ;
 }
 
 .nav-bar{
@@ -43,11 +49,13 @@ code {
   justify-content: space-around;
   /* background-color: #A1C6EA; */
   padding:13px 0;
+  text-align: center;
 }
 
 .nav-bar li{
   font-weight: 600;
   display:inline-block;
+ 
 } 
 
 .todolist{
@@ -55,7 +63,9 @@ code {
   width: 100%;
   padding:25px 17px;
   /* background-color: #DAE3E5; */
+ 
 }
+
 
 .todolist input{
   width: 100%;
@@ -70,7 +80,7 @@ code {
 
 .todolist ul{
   list-style-type: none;
- 
+  
 }
 
 .todolist ul li{
@@ -82,9 +92,14 @@ code {
   padding:15px;
   font-size: 16px;
   text-transform: capitalize;
-  
+  white-space: normal;
+  text-align: center;
 }
 
 ul li{
   cursor: pointer;
+
 }
+
+
+
