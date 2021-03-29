@@ -14,7 +14,7 @@ function ListItemContexProvider({children}) {
     const removeItem=(id)=>{
       const filteredTasks = tasks.filter(item=>item.id!==id)
       setTasks(filteredTasks)
-     
+    
     }
   return (
   <ListItemContext.Provider value={{tasks,addItem:addItem,removeItem:removeItem}}>
